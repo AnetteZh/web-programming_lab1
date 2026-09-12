@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Shop for knitters</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1>Knitter's shop</h1>
+            <p>Добро пожаловать в онлайн-магазин товаров для вязания</p>
+        </div>
+
+        <nav class="header-right">
+            <ul>
+                <li>
+                    <!-- Ссылка на корзину с иконкой -->
+                    <a href="#cart" class="cart-link">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-text">Корзина</span>
+                    </a>
+                    <a href="#home" class="home-link" style="display:none;">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="home-text">Вернуться на главную</span>
+                    </a>
+                </li>
+                <li class="cart-count-badge">
+                    <span id="cart-count">0</span> товаров
+                </li>
+            </ul>
+        </nav>
+    </header>
+            
+    <main>
+        <section id="new_arrivals">
+            <h2>новые поступления</h2>
+            <div class="products-grid">
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/alize_blue_yarn.jpg" alt="Alize Lanagold 40" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Alize Lanagold 40</h3>
+                    </div>
+                    <div class="product-footer">
+                        <span class="product-price" data-price="216">Цена: 216 ₽</span>
+                        <button class="add-to-cart">В корзину</button>
+                        <button type="button" class="open-modal-btn"
+                            data-title="Alize Lanagold 40"
+                            data-desc="49% шерсть, 51% акрил, 240м, 100г. Классическая полушерстяная пряжа средней толщины.">
+                            Подробнее
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/cht_gamma.jpg" alt="gamma hook cht" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Крючок Cht металл Gamma </h3>
+                    </div>
+                    <div class="product-footer">
+                        <span class="product-price" data-price="67">Цена: 67 ₽</span>
+                        <button class="add-to-cart">В корзину</button>
+                        <button type="button" class="open-modal-btn"
+                            data-title="Крючок Cht металл Gamma"
+                            data-desc="Крючок металлический с покрытием. длина: 15 см, ширина: 6.0 mm.">
+                            Подробнее
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/addi_round_needles.jpg" alt="addi round needles" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Спицы Addi Novel круговые</h3>
+                    </div>
+                    <div class="product-footer">
+                        <span class="product-price" data-price="1380">Цена: 1380 ₽</span>
+                        <button class="add-to-cart">В корзину</button>
+                        <button type="button" class="open-modal-btn"
+                            data-title="Спицы Addi Novel круговые"
+                            data-desc="Тонкие круговые спицы с квадратным сечением. Длина указана от кончика до кончика спиц (N2.0 40см).">
+                            Подробнее
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/markers.jpg" alt="markers gamma" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title"> Кольца MKL-20 маркировочные с замком GAMMA</h3>
+                    </div>
+                    <div class="product-footer">
+                        <span class="product-price" data-price="106">Цена: 106 ₽</span>
+                        <button class="add-to-cart">В корзину</button>
+                        <button type="button" class="open-modal-btn"
+                            data-title="Кольца MKL-20 маркировочные с замком GAMMA"
+                            data-desc="Пластиковые маркировочные кольца с замком. В упаковке 20 шт.">
+                            Подробнее
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="yarn">
+            <h2>пряжа</h2>
+            <div class="products-grid">
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/alize_blue_yarn.jpg" alt="Alize Lanagold 40" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Alize Lanagold 40</h3>
+                    </div>
+                    <div class="product-footer">
+                        <span class="product-price" data-price="216">Цена: 216 ₽</span>
+                        <button class="add-to-cart">В корзину</button>
+                        <button type="button" class="open-modal-btn"
+                            data-title="Alize Lanagold 40"
+                            data-desc="49% шерсть, 51% акрил, 240м, 100г. Классическая полушерстяная пряжа средней толщины.">
+                            Подробнее
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/himalaya_dolphin_baby.jpg" alt="himalaya dolphin baby" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Пряжа Himalaya Dolphin Baby</h3>
+                    </div>
+                    <div class="product-footer">
+                        <span class="product-price" data-price="263">Цена: 263 ₽</span>
+                        <button class="add-to-cart">В корзину</button>
+                        <button type="button" class="open-modal-btn"
+                            data-title="Пряжа Himalaya Dolphin Baby"
+                            data-desc="100% полиэстер, 120м, 100г. Плюшевая пряжа. Оттенок 80303">
+                            Подробнее
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/nako_paris_yarn.jpg" alt="nako paris" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Пряжа Nako Paris</h3>
+                    </div>
+                    <div class="product-footer">
+                        <span class="product-price" data-price="313">Цена: 313 ₽</span>
+                        <button class="add-to-cart">В корзину</button>
+                        <button type="button" class="open-modal-btn"
+                            data-title="Пряжа Nako Paris"
+                            data-desc="40% премиум акрил, 60% полиамид, 245м, 100г. Пушистая и мягкая пряжа, однотонных цветов. Оттенок 10357.">
+                            Подробнее
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/lurex.jpg" alt="ceam lurex lame" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Пряжа Сеам Lurex Lame 550</h3>
+                    </div>
+                    <div class="product-footer">
+                        <span class="product-price" data-price="350">Цена: 350 ₽</span>
+                        <button class="add-to-cart">В корзину</button>
+                        <button type="button" class="open-modal-btn"
+                            data-title="Пряжа Сеам Lurex Lame 550"
+                            data-desc="64% вискоза, 36% метанит, 550м, 25г. Пряжа великолепно подойдет для отделки вечерних нарядов. Благодаря входящей в состав вискозе, пряжа не колется и приятна на ощупь.">
+                            Подробнее
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="needles">
+            <h2>спицы</h2>
+            <div class="products-grid">
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/addi_round_needles.jpg" alt="addi round needles" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title"> Спицы Addi Novel круговые</h3>
+                    </div>
+                    <div class="product-footer">
+                        <span class="product-price" data-price="1380">Цена: 1380 ₽</span>
+                        <button class="add-to-cart">В корзину</button>
+                        <button type="button" class="open-modal-btn"
+                            data-title="Спицы Addi Novel круговые"
+                            data-desc="Тонкие круговые спицы с квадратным сечением. Длина указана от кончика до кончика спиц (N2.0 40см).">
+                            Подробнее
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/zhing_needles.jpg" alt="zing needles" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Спицы прямые Zing</h3>
+                    </div>
+                    <div class="product-footer">
+                        <span class="product-price" data-price="404">Цена: 404 ₽</span>
+                        <button class="add-to-cart">В корзину</button>
+                        <button type="button" class="open-modal-btn"
+                            data-title="Спицы прямые Zing"
+                            data-desc="Фирма KnitPro. Спицы прямые Zing, алюминий, 2шт в упаковке">
+                            Подробнее
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/needles_clover.jpg" alt="needles clover" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Спицы для кос Clover</h3>
+                    </div>
+                    <div class="product-footer">
+                        <span class="product-price" data-price="197">Цена: 197 ₽</span>
+                        <button class="add-to-cart">В корзину</button>
+                        <button type="button" class="open-modal-btn"
+                            data-title="Спицы для кос Clover"
+                            data-desc="Спицы для кос разного размера –№2,№ 3 и № 5.">
+                            Подробнее
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/addi_needles_kit.png" alt="addi needles kit" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Система ADDI-click Lace укороченные</h3>
+                    </div>
+                    <div class="product-footer">
+                        <span class="product-price" data-price="13400">Цена: 13400 ₽</span>
+                        <button class="add-to-cart">В корзину</button>
+                        <button type="button" class="open-modal-btn"
+                            data-title="Система ADDI-click Lace укороченные"
+                            data-desc="набор укороченных спиц.">
+                            Подробнее
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="hooks">
+            <h2>крючки</h2>
+            <div class="products-grid">
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/cht_gamma.jpg" alt="gamma hook cht" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Крючок Cht металл Gamma </h3>
+                    </div>
+                    <div class="product-footer">
+                        <span class="product-price" data-price="67">Цена: 67 ₽</span>
+                        <button class="add-to-cart">В корзину</button>
+                        <button type="button" class="open-modal-btn"
+                            data-title="Крючок Cht металл Gamma"
+                            data-desc="Крючок металлический с покрытием. длина: 15 см, ширина: 6.0 mm.">
+                            Подробнее
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/addi_hook.jpg" alt="addi hook" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Крючок addiDuett алюминий</h3>
+                    </div>
+                    <div class="product-footer">
+                        <span class="product-price" data-price="770">Цена: 770 ₽</span>
+                        <button class="add-to-cart">В корзину</button>
+                        <button type="button" class="open-modal-btn"
+                            data-title="Крючок addiDuett алюминий "
+                            data-desc="Крючок вязальный, 15 см.">
+                            Подробнее
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/pony_hook.jpg" alt="pony hook" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Крючок Pony</h3>
+                    </div>
+                    <div class="product-footer">
+                        <span class="product-price" data-price="80">Цена: 80 ₽</span>
+                        <button class="add-to-cart">В корзину</button>
+                        <button type="button" class="open-modal-btn"
+                            data-title="Крючок Pony"
+                            data-desc="Крючок вязальный, длина 15 см.">
+                            Подробнее
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="other">
+            <h2>другое</h2>
+            <div class="products-grid">
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/markers.jpg" alt="markers gamma" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title"> Кольца MKL-20 маркировочные с замком GAMMA</h3>
+                    </div>
+                    <div class="product-footer">
+                        <span class="product-price" data-price="106">Цена: 106 ₽</span>
+                        <button class="add-to-cart">В корзину</button>
+                        <button type="button" class="open-modal-btn"
+                            data-title="Кольца MKL-20 маркировочные с замком GAMMA"
+                            data-desc="Пластиковые маркировочные кольца с замком. В упаковке 20 шт.">
+                            Подробнее
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/cords_machine.jpg" alt="cords machine" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Машинка для вязания шнуров</h3>
+                    </div>
+                    <div class="product-footer">
+                        <span class="product-price" data-price="990">Цена: 990 ₽</span>
+                        <button class="add-to-cart">В корзину</button>
+                        <button type="button" class="open-modal-btn"
+                            data-title="Машинка для вязания шнуров"
+                            data-desc="Мельница для вязания шнуров.">
+                            Подробнее
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/rows_counter.jpg" alt="rows counter gamma" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Счетчик рядов для вязания электронный GAMMA</h3>
+                    </div>
+                    <div class="product-footer">
+                        <span class="product-price" data-price="200">Цена: 200 ₽</span>
+                        <button class="add-to-cart">В корзину</button>
+                        <button type="button" class="open-modal-btn"
+                            data-title="Счетчик рядов для вязания электронный GAMMA"
+                            data-desc="Предназначен для счета провязанных рядов.">
+                            Подробнее
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <div id="product-modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <h2 id="modal-title" class="modal-title"></h2>
+                <p id="modal-desc" class="modal-desc"></p>
+                <button id="close-modal" class="close-btn">Закрыть</button>
+            </div>
+        </div>
+
+        <section id="cart-page" style="display:none;">
+            <h2>Ваша корзина</h2>
+            <div id="cart-items"></div>
+            <div style="margin-top:20px;">
+                <h3 id="cart-total">Итого: 0 ₽</h3>
+                <button id = "create-ord-btn" class="create-order">Оформить заказ</button>
+            </div>
+        </section>
+
+        <section id="create-order-modal" class="modal" style="display:none;">
+            <div class="modal-content">
+                <section>
+                <h2>Оформление заказа</h2>
+                <h3 id="total-price">Сумма к оплате: 0 ₽</h3>
+                </section>
+
+                <section>
+                    <form>
+                        <p>Пожалуйста, заполните все обязательные (*) поля</p>
+                        <section>
+                            <h2>Контактная информация</h2>
+                            <p>
+                                <label for="name">Имя *:</label>
+                                <input type="text" id="name" name="username" required />
+                            </p>
+                            <p>
+                                <label for="surname">Фамилия *:</label>
+                                <input type="text" id="surname" name="user-surname" required />
+                            </p>
+                            <p>
+                                <label for="adress">Адрес доставки *:</label>
+                                <input type="text" id="adress" name="adress" required />
+                            </p>
+                            <p>
+                                <label for="number">Номер телефона *:</label>
+                                <input type="number" id="number" name="number" required />
+                            </p>
+                            <button class="send-form" type="button">Оформить заказ</button>
+                        </section>
+                    </form>
+                </section>
+                <button id="close-modal-order" class="close-btn">Закрыть</button>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <section id="contact info">
+            <h2>Контактная информация</h2>
+            <p>телефон: 8(800)9007060 </p>
+            <p >&copy; 2025 </p>
+        </section>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
