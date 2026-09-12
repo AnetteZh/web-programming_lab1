@@ -136,19 +136,22 @@ document.addEventListener('DOMContentLoaded', () => {
       total += item.price;
 
       const row = document.createElement('div');
-      row.style.cssText = 'display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;padding:10px;background:#f9f9f9;border-radius:6px;';
+      row.className = 'cart-item';
 
       const title = document.createElement('span');
+      title.className = 'cart-item-title';
       title.textContent = item.title;
 
       const right = document.createElement('div');
+      right.className = 'cart-item-right';
 
       const price = document.createElement('strong');
+      price.className = 'cart-item-price';
       price.textContent = `${item.price.toLocaleString()} ₽`;
 
       const removeBtn = document.createElement('button');
+      removeBtn.className = 'cart-item-remove';
       removeBtn.textContent = 'Удалить';
-      removeBtn.style.cssText = 'background:transparent;border:none;color:#ff4d4d;cursor:pointer;margin-left:10px;font-weight:bold;';
       removeBtn.addEventListener('click', () => {
         cart.splice(index, 1);
         saveCart();
